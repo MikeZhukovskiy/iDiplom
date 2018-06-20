@@ -1,0 +1,297 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>iDiplom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mike Zhukovskiy">  
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+
+    <link href="scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="scripts/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Icons -->
+    <link href="scripts/icons/general/stylesheets/general_foundicons.css" media="screen" rel="stylesheet" type="text/css" />  
+    <link href="scripts/icons/social/stylesheets/social_foundicons.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+        <link href="scripts/icons/general/stylesheets/general_foundicons_ie7.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="scripts/icons/social/stylesheets/social_foundicons_ie7.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome.min.css">
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Palatino+Linotype" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/animate.css" rel="stylesheet" type="text/css" />
+    <link href="styles/custom.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="pageBody" style='overflow-x:hidden;'>
+
+<div id="p_prldr">
+        <div class="contpre">
+            <span class="icon-spinner icon-spin icon-2x"></span>
+            <span>Загружаю</span>
+        </div>
+    </div>
+<div class="order wow fadeIn">
+    <div class="order_conteiner">
+        <form id="form_contact" class="decor wow fadeUp row-fluid" data-wow-delay="1.0s">
+            <div class="close closed">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAU2SURBVHhe7VzLbhxFFB1eK2DJYwuIbRTiqRriBZPpHgMbQAiSPUsWSCiGgAQYWAUQn+Ak/ABB4iV+JCLs4sQEodgBpmcwtiDNPTW3Eye6GndXV/UrdaQjWzPd93G66101vYCAgICAgICAXi9dWnrgr/Hg6dlosJTE/fEs1q+A5n/6DN+lw+H9fPndjfT48ftmY9WfRvpUEqtv6O8vSaz3prFOF5GvuWjuifW7EBa22Gy3kX7cuzcZq5hEOEfJ/5GJUp7qOmwm8eAYfLC77uDa8vLD00i9l0R6QxbAHY2PkX4HPtl9e/H7cPgQFbVPSbxtKVmvhM9IryEGDqddoKJ6gsTbFJOrkBTDlUmkX+ewmo/pUD1OxegnKZk6SUL+gNg4zGaCG4jfpASaQMRGD3fE4TYLSaRWKbj/pMCbRIrzX3obT3LY9SPt9e6hwL68M9Cmk4T8ArFzGvUAAdDTPCsF2AZS7Ou1ikgBfC4F1iZStXOa06kW07F6XwqolaSON6dVDUxrS5WxGEwLaRqWqlpn089rcFfFliTg1SQaPMZp+gM5alwn2RXR2eY0/QDDM8lxlziJB69xum6B2Q16QrWPbX2TSthlLxMQJN4nksNuUn3EabuBmc+L1XXZmSVfWJY/t6FLW2Ckt5y+hZgMFR1Z8u83TqQ3rm6mO6tvit8XIWzAFmxK31sz0qc4/XIw0/AOZ5KNeNtbqcE/O6VExL2wAcCmSxGpyrrkZHkAHUzJgQ1vEy+DpYj7xcvgXsTBMZbBHiTgV5LxohTFy1BQREm8DC5FpBHKGZbBDlguJEPlV8+eP2rqqYXIKeIi8TLAF3xK9xdipLZLFWOzbisZtmCexA8S0YWN4uw/w3IUB1oi2agdywhQj3jEMjM11BJh9V82bEkbIWoTjwgNWI7iIAMX7zTogkUEqVO8OdUFlqMYsIknybFXxZa5hNnbnXMRvIqHN1DvWW1owk4oyaBL5hJxETyLl/HP0ZGnWJb8mMV9JRlzTWsRKxIPRG+EZcmPZKQjyZgPFhaxQvFAjMZYlvyYjQYvS8Z80Yh4UH0H0DVVigfOov5LLEt+BAFv0UpAl5MIB9GI17kiHBqRm7RqREI35hatujGhIz0nFd9d65MBZCAM5WyHckCYTDBDufMsR3GE6SwUYbXKchQHDrFIRm3oQoBaRFxRh1mO4phP6TtYD27tlL7eKr0yR/Wgkx2orVxUitU6y2APLO1Jxm0oimhZ5CQRXYoHTsb9IctgD7OwHqtLkgMb3iaipXgZ94voWjzk7Gz/tOvW2IhI9VQZ8TLCBmy5FM/Q5bZfbLRxft6tyZuLYn3N+RY3egvXBEfdZKQ+4LTdAU+E6oUrosMOkca+GzdWDj3IabsFTj1KTrvEWaRe5XT9gMaGP0qOu0DK7VtO0x9wFIAcdfCYg/o1WTn6KKfpF5ji7tpBGyed5iJAP0kKpo2kxvEtTqta0Jt4WgqoTUQOnE714OOu61JgbSBib8qZ4dYde6WG8LPaxdsPEvFkGxoWxEjF9m0Ou1kwrXOjf3RCbVbe2hYF+lL0lL+XEqiT9HC/m7x4+BEOs/nAqUcK+rKUTJWkGDa8D898YT4NptewtiAl55XGp/rQ28RAlTBCUscbb4OYrEMaH+TL+XxeE4DlAVTi1NCcczpBS28b+nSTkXquUV0Tn4CY0+jZI9TgrJKg50mEn+nt2RUF2sf5NeoCXf817sVBmNJLj10BNvHsxP0nsaCPXwa5+ROgIx3hs50V/YT1Rp+AgICAgICATqHX+x/fUC67tHywNwAAAABJRU5ErkJggg==">
+            </div>
+            <div class="form-left-decoration"></div>
+            <div class="form-right-decoration"></div>
+            <div class="circle"></div>
+            <div class="form-inner">
+                <h3>Написать нам</h3>
+                <input type="text" placeholder="Ваше Имя" name="name" class="name" value="" required>
+                <input type="email" placeholder="Телефон" name="tel" value="">
+                <input type="email" placeholder="Email" name="email" value="" required>
+                <select size = "1" name = "name[]" required false>      
+                    <option selected disabled>Выберите тип работы...</option>        
+                    <option value = "Курсовая работа">Курсовая работа</option>        
+                    <option value = "Дипломная работа">Дипломная работа</option>
+                    <option value = "Дипломная работа">Реферат</option> 
+                    <option value = "Дипломная работа">Отчет по практике</option> 
+                    <option value = "Дипломная работа">Контрольная работа</option>
+                    <option value = "Дипломная работа">Речь и презинтация</option>      
+                </select>
+                <textarea placeholder="Дополнительная информация..." rows="3" value=""></textarea>
+                <input type="submit" value="Отправить">
+        </div>
+        </form>
+    </div>
+</div>
+        <div id="decorative2">
+    <div id="decorative2">
+            <div class="container wow fadeIn">
+
+        <div class="divPanel topArea notop nobottom wow fadeIn" data-wow-delay="0.4s">
+            <div class="row-fluid">
+                <div class="span12">
+
+                    <div id="divLogo" class="pull-left">
+                        <a href="index.html" id="divSiteTitle">iDiplom</a><br />
+                        <a href="index.html" id="divTagLine">курсовые, дипломные на заказ</a>
+                    </div>
+
+                    <div id="divMenuRight" class="pull-right">
+                    <div class="navbar">
+                        <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">МЕНЮ <span class="icon-chevron-down icon-white"></span>
+                        </button>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav nav-pills ddmenu">
+                                <li class="dropdown"><a href="index.html">Главная</a></li>
+                                <li class="dropdown"><a href="news.html">Новости</a></li>
+                                <li class="dropdown active"><a href="services.html">Услуги</a></li>
+                                <li class="dropdown"><a href="guarantees.html">Гарантии</a></li>
+                                <li class="dropdown"><a href="about.html">О нас</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div id="contentOuterSeparator"></div>
+
+<div class="container">
+
+    <div class="divPanel page-content">
+
+        <div class="breadcrumbs">
+                <a href="index.html">Главная</a> &nbsp;/&nbsp; <span>Услуги</span>
+            </div> 
+
+        <div class="row-fluid">
+			
+			<!--Edit Sidebar Content here-->
+                <div class="span3">                    
+                    <h3>Наши услуги</h3>
+                    <p><a href="#">Курсовая работа</a></p>
+                    <p><a href="#">Дипломная работа</a></p> 
+                    <p><a href="#">Реферат</a></p>
+                    <p><a href="#">Отчет по практике</a></p>
+                    <p><a href="#">Контрольная работа</a></p>
+                    <p><a href="#">Речь и презинтация</a></p>     
+		  
+			         <h3>Как заказать</h3>
+                        <p>Для полного заказа, заполните основную форму на этой странице.</p> 
+                        <p>Если вы хотите узнать стоимость работы, сроки выполнения, то заполните краткую <a href="#">форму</a>, в самое ближайшее время мы с вами свяжемся.</p>                 	
+                </div>
+                <div class="span9" id="divMain">
+
+                    <h1>Оформление заявки</h1>
+					<hr>	
+                    <form id="form_contact_services" class="dec wow fadeUp row-fluid" action="" method="POST" data-wow-delay="1.0s">
+                        <div class="form-inner_services">
+                            <input type="text" placeholder="Фамилия Имя Отчество" name="fio" class="name" value="" required>
+                            <input type="text" placeholder="Телефон" name="tel" value="">
+                            <input type="email" placeholder="Email" name="email" value="" required>
+                            <input type="text" placeholder="Предмет" name="" value="" required>
+                            <select size = "1" name = "name[]" required false>      
+                                <option selected disabled>Выберите тип работы...</option>        
+                                <option value = "Курсовая работа">Курсовая работа</option>        
+                                <option value = "Дипломная работа">Дипломная работа</option>
+                                <option value = "Дипломная работа">Реферат</option> 
+                                <option value = "Дипломная работа">Отчет по практике</option> 
+                                <option value = "Дипломная работа">Контрольная работа</option>
+                                <option value = "Дипломная работа">Речь и презинтация</option>      
+                            </select>
+                            <input type="text" placeholder="Тема работы" name="" value="" required>
+                            <input type="text" placeholder="Срок сдачи" name="" value="">
+                            <label class="label_input" for="test">
+                                <div class="aaaaa">Прикрепить файл ...</div>
+                                <input type="file" id="test">
+                            </label>
+                            <textarea placeholder="Дополнительная информация..." rows="3" value=""></textarea>
+                                <input type="submit" value="Отправить заявку">                        
+                        </div>
+                    </form>					
+				</div>	                             
+                    					                  
+				<!--/End Main Content Area here-->	                
+					
+							
+            </div>
+
+        <div id="footerInnerSeparator"></div>
+    </div>
+
+</div>
+
+<div id="footerOuterSeparator"></div>
+
+<div id="divFooter" class="footerArea wow fadeIn" data-wow-offset="200">
+
+    <div class="container wow fadeIn" data-wow-delay="0.9s">
+
+        <div class="divPanel">
+
+            <div class="row-fluid">
+                <div class="span3" id="footerArea1">
+                
+                    <h3>О компании</h3>
+
+                    <p>
+                        Мы тоже работали, чтобы на стипендию шикануть, тоже пытались успеть выполнить все очень важные студенческие дела и не забыть при этом про сессию. И, несмотря на студенческое состояние, постоянного недосыпа, вспоминать об этом приятно. А теперь, для того, чтобы вы выспались — есть мы. Те, кто знает, как обеспечить Вам спокойный сон.
+                    </p>
+                </div>
+                <div class="span3" id="footerArea2">
+
+                    <h3>Сроки выполнения</h3> 
+                        <p>
+                            Существуют стандартные сроки выполнения заказов в нашей компании. Для дипломной (магистерской) работы (проекта) – это 2-6 недель, для остальных работ — 5-14 дней. 
+                        </p>
+
+                </div>
+                <div class="span3" id="footerArea3">
+
+                    <h3>Договор</h3> 
+                    <p>
+                        Как правило, договор заключается при написании дипломной (магистерской) работы. Заключение договора носит добровольный характер. Его можно заключить на любом этапе начиная с момента согласования плана работы.
+                    </p>
+                    <span>
+                        С договором можно ознакомиться или у нас в офисе или получив по электронной почте.
+                    </span>
+
+                </div>
+                <div class="span3" id="footerArea4">
+
+                    <h3>Связь с нами</h3>  
+                                                               
+                    <ul id="contact-info">
+                    <li>                                    
+                        <i class="general foundicon-phone icon"></i>
+                        <span class="field">Тел.:</span>
+                        <br />
+                        <p>+375 44-513-61-41</p>
+                        <br>
+                        <p style="margin-left: 30px; margin-top: -28px">+375 29-546-29-72</p>                
+                    </li>
+                    <li>
+                        <i class="general foundicon-mail icon"></i>
+                        <span class="field">Email:</span>
+                        <br />
+                        <a href="mailto:info@yourdomain.com" title="Email">info@yourdomain.com</a>
+
+                    </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <br /><br />
+            <div class="row-fluid">
+                <div class="span12">
+                    <p class="copyright">
+                        Copyright © 2018 Mike Zhukovskiy. All Rights Reserved. 
+                    </p>
+
+                    <p class="social_bookmarks">
+                        <a href="#"><i class="social foundicon-facebook"></i> Facebook</a>
+            <a href=""><i class="social foundicon-twitter"></i> Twitter</a>
+            <a href="#"><i class="social foundicon-pinterest"></i> Pinterest</a>
+            <a href="#"><i class="social foundicon-instagram"></i> Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <br />
+
+        </div>
+
+    </div>
+    
+</div>
+
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+        $svg_anm   = $preloader.find('.svg_anm');
+    $svg_anm.delay(500).fadeOut('slow');
+    $preloader.delay(500).fadeOut('slow');
+});
+</script> 
+<script src="scripts/wow.min.js"></script>
+<script> new WOW().init(); </script>
+<script src="scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="scripts/default.js" type="text/javascript"></script>
+
+
+<script src="scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
+<script src="scripts/main.js" type="text/javascript"></script>
+<script type="text/javascript">$('#list_photos').carouFredSel({ responsive: true, width: '100%', scroll: 1, items: {width: 320,visible: {min: 2, max: 6}} });
+</script>
+<script>
+    $(".btn_click").click(function(e){
+        e.preventDefault();
+        $(".order").fadeIn(500);
+    });
+    $(".closed").click(function(e){
+        $(".order").fadeOut(500);
+    })
+</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+</body>
+</html>

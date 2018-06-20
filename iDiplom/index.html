@@ -1,0 +1,395 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>iDiplom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mike Zhukovskiy">  
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW"> 
+    <!-- Remove this Robots Meta Tag, to allow indexing of site -->
+    <link href="scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="scripts/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Icons -->
+    <link href="scripts/icons/general/stylesheets/general_foundicons.css" media="screen" rel="stylesheet" type="text/css" />  
+    <link href="scripts/icons/social/stylesheets/social_foundicons.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+        <link href="scripts/icons/general/stylesheets/general_foundicons_ie7.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="scripts/icons/social/stylesheets/social_foundicons_ie7.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome.min.css">
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+
+<link href="scripts/carousel/style.css" rel="stylesheet" type="text/css" />
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Palatino+Linotype" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	<link href="styles/animate.css" rel="stylesheet" type="text/css" />
+    <link href="styles/custom.css" rel="stylesheet" type="text/css" />
+    
+    
+</head>
+<body id="pageBody" class="wow fadeIn" style='overflow-x:hidden;'>
+<div id="p_prldr">
+	<div class="contpre">
+        <span class="icon-spinner icon-spin icon-2x"></span>
+        <span>Загружаю</span>
+    </div>
+</div>
+<div class="order wow fadeIn">
+	<div class="order_conteiner">
+		<form id="form_contact" class="decor wow fadeUp row-fluid" data-wow-delay="0.9s">
+			<div class="close closed">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAU2SURBVHhe7VzLbhxFFB1eK2DJYwuIbRTiqRriBZPpHgMbQAiSPUsWSCiGgAQYWAUQn+Ak/ABB4iV+JCLs4sQEodgBpmcwtiDNPTW3Eye6GndXV/UrdaQjWzPd93G66101vYCAgICAgICAXi9dWnrgr/Hg6dlosJTE/fEs1q+A5n/6DN+lw+H9fPndjfT48ftmY9WfRvpUEqtv6O8vSaz3prFOF5GvuWjuifW7EBa22Gy3kX7cuzcZq5hEOEfJ/5GJUp7qOmwm8eAYfLC77uDa8vLD00i9l0R6QxbAHY2PkX4HPtl9e/H7cPgQFbVPSbxtKVmvhM9IryEGDqddoKJ6gsTbFJOrkBTDlUmkX+ewmo/pUD1OxegnKZk6SUL+gNg4zGaCG4jfpASaQMRGD3fE4TYLSaRWKbj/pMCbRIrzX3obT3LY9SPt9e6hwL68M9Cmk4T8ArFzGvUAAdDTPCsF2AZS7Ou1ikgBfC4F1iZStXOa06kW07F6XwqolaSON6dVDUxrS5WxGEwLaRqWqlpn089rcFfFliTg1SQaPMZp+gM5alwn2RXR2eY0/QDDM8lxlziJB69xum6B2Q16QrWPbX2TSthlLxMQJN4nksNuUn3EabuBmc+L1XXZmSVfWJY/t6FLW2Ckt5y+hZgMFR1Z8u83TqQ3rm6mO6tvit8XIWzAFmxK31sz0qc4/XIw0/AOZ5KNeNtbqcE/O6VExL2wAcCmSxGpyrrkZHkAHUzJgQ1vEy+DpYj7xcvgXsTBMZbBHiTgV5LxohTFy1BQREm8DC5FpBHKGZbBDlguJEPlV8+eP2rqqYXIKeIi8TLAF3xK9xdipLZLFWOzbisZtmCexA8S0YWN4uw/w3IUB1oi2agdywhQj3jEMjM11BJh9V82bEkbIWoTjwgNWI7iIAMX7zTogkUEqVO8OdUFlqMYsIknybFXxZa5hNnbnXMRvIqHN1DvWW1owk4oyaBL5hJxETyLl/HP0ZGnWJb8mMV9JRlzTWsRKxIPRG+EZcmPZKQjyZgPFhaxQvFAjMZYlvyYjQYvS8Z80Yh4UH0H0DVVigfOov5LLEt+BAFv0UpAl5MIB9GI17kiHBqRm7RqREI35hatujGhIz0nFd9d65MBZCAM5WyHckCYTDBDufMsR3GE6SwUYbXKchQHDrFIRm3oQoBaRFxRh1mO4phP6TtYD27tlL7eKr0yR/Wgkx2orVxUitU6y2APLO1Jxm0oimhZ5CQRXYoHTsb9IctgD7OwHqtLkgMb3iaipXgZ94voWjzk7Gz/tOvW2IhI9VQZ8TLCBmy5FM/Q5bZfbLRxft6tyZuLYn3N+RY3egvXBEfdZKQ+4LTdAU+E6oUrosMOkca+GzdWDj3IabsFTj1KTrvEWaRe5XT9gMaGP0qOu0DK7VtO0x9wFIAcdfCYg/o1WTn6KKfpF5ji7tpBGyed5iJAP0kKpo2kxvEtTqta0Jt4WgqoTUQOnE714OOu61JgbSBib8qZ4dYde6WG8LPaxdsPEvFkGxoWxEjF9m0Ou1kwrXOjf3RCbVbe2hYF+lL0lL+XEqiT9HC/m7x4+BEOs/nAqUcK+rKUTJWkGDa8D898YT4NptewtiAl55XGp/rQ28RAlTBCUscbb4OYrEMaH+TL+XxeE4DlAVTi1NCcczpBS28b+nSTkXquUV0Tn4CY0+jZI9TgrJKg50mEn+nt2RUF2sf5NeoCXf817sVBmNJLj10BNvHsxP0nsaCPXwa5+ROgIx3hs50V/YT1Rp+AgICAgICATqHX+x/fUC67tHywNwAAAABJRU5ErkJggg==">
+			</div>
+  			<div class="form-left-decoration"></div>
+  			<div class="form-right-decoration"></div>
+  			<div class="circle"></div>
+  			<div class="form-inner">
+   	 			<h3>Написать нам</h3>
+   	 			<input type="text" placeholder="Ваше Имя" name="name" class="name" value="" required>
+    			<input type="text" placeholder="Телефон" name="tel" class="tel" value="">
+    			<input type="email" placeholder="Email" name="email" class="email" value="" required>
+    			<select size = "1" name = "name[]" class="services" required false>      
+    				<option selected disabled>Выберите тип работы...</option>        
+    				<option value = "Курсовая работа">Курсовая работа</option>        
+    				<option value = "Дипломная работа">Дипломная работа</option>
+    				<option value = "Реферат">Реферат</option> 
+    				<option value = "Отчет по практике">Отчет по практике</option> 
+    				<option value = "Контрольная работа">Контрольная работа</option>
+    				<option value = "Речь и презинтация">Речь и презинтация</option>      
+    			</select>
+    			<input type="text" placeholder="Дополнительная информация..." name="area" class="area" value="">
+    			<input class="submit_input" type="submit" value="Отправить">
+ 		</div>
+		</form>
+	</div>
+    <div class="worningform">
+        <img src="images/warning.png" alt="" style="width: 60px">
+        <h4>Заполните обязательные поля</h4>
+    </div>
+    <div class="okform">
+        <img src="images/ok.png" alt="" style="width: 60px">
+        <h4>В ближайшее время мы с вами свяжимся</h4>
+    </div>
+    </div>
+</div>
+		<div id="decorative2">
+		    <div class="container wow fadeIn">
+
+        <div class="divPanel topArea notop nobottom wow fadeIn" data-wow-delay="0.4s">
+            <div class="row-fluid">
+                <div class="span12">
+
+                    <div id="divLogo" class="pull-left">
+                        <a href="index.html" id="divSiteTitle">iDiplom</a><br />
+                        <a href="index.html" id="divTagLine">курсовые, дипломные на заказ</a>
+                        <a href="index.html" id="divTagLineMobile">Помощь студенту</a>
+                    </div>
+
+                    <div id="divMenuRight" class="pull-right">
+                    <div class="navbar">
+                        <button type="button" class="btn-navbar-highlight btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                        	<span class="nav_respond">&#9776;</span>
+                        </button>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav nav-pills ddmenu">
+                                <li class="dropdown active"><a href="index.html">Главная</a></li>
+								<li class="dropdown"><a href="news.html">Новости</a></li>
+                                <li class="dropdown"><a href="services.html">Услуги</a></li>
+                                <li class="dropdown"><a href="guarantees.html">Гарантии</a></li>
+                                <li class="dropdown"><a href="about.html">О нас</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="decorative1" style="position:relative">
+    <div class="container">
+
+        <div class="divPanel headerArea">
+            <div class="row-fluid">
+                <div class="span12">
+
+                        <div id="headerSeparator"></div>
+
+                        <div id="divHeaderText" class="page-content">
+                            <div id="divHeaderLine1" class="wow fadeInLeft" data-wow-delay="1.0s">iDiplom - помощь студенту</div><br />
+                            <div id="divHeaderLine2" class="wow fadeInLeft" data-wow-delay="1.4s">Написание курсовых и дипломных работ на заказ в Минске</div><br />
+                            <div id="divHeaderLine3" class="wow fadeInLeft" data-wow-delay="1.8s"><a class="btn btn-large btn-primary btn_click" href="#" style="font-size: 20px">Заказать сейчас</a></div>
+                        </div>
+
+                        <div id="headerSeparator2"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div id="contentOuterSeparator"></div>
+
+<div class="container">
+
+    <div class="divPanel page-content">
+
+        <div class="row-fluid">
+
+                <div class="span12" id="divMain">
+
+                    <h1 class="wow fadeInUp" data-wow-delay="0.8s">Самый высокий уровень услуг</h1>
+
+                    <p class="wow fadeInUp" data-wow-delay="0.8s">Каждую работу мы пишем индивидуально, учитывая все требования преподавателя. Мы хорошо знаем требования ВУЗов и почти все наши авторы имеют стаж в написании дипломных на заказ более пяти лет. И если Вы сделаете заказ дипломной или курсовой работы у нас, Вы её успешно защитите.
+                    </p>
+
+                    <hr style="margin:38px 0 15px" />
+                    <br />
+
+                    <div class="list_carousel responsive wow fadeInRight" data-wow-delay="0.6s">
+                        <ul id="list_photos">
+                            <li class="list_photos_li" style="height: 190px; cursor: pointer;"><img src="images/carmel.jpg" class="img-polaroid">
+                            	 <h4 style="font-weight: 800; text-align: center; color: rgb(250, 10, 50);">Дипломная</h4>
+                            	 <p style="font-weight: 600; text-align: center; color: #FF5F5F;">от 180 рублей</p>
+                			</li>
+                            <li class="list_photos_li" style="height: 190px; cursor: pointer;"><img src="images/rula-sibai-pink-flowers.jpg" class="img-polaroid"> <h4 style="font-weight: 800; text-align: center; color: rgb(250, 10, 50);">Курсовая</h4><p style="font-weight: 600; text-align: center; color: #FF5F5F;">от 48 рублей</p> </li>
+                            <li class="list_photos_li" style="height: 190px; cursor: pointer;"><img src="images/girl-flowers.jpg" class="img-polaroid"><h4 style="font-weight: 800; text-align: center; color: rgb(250, 10, 50);">Реферат</h4><p style="font-weight: 600; text-align: center; color: #FF5F5F;">от 12 рублей</p>  </li>
+                            <li class="list_photos_li" style="height: 190px; cursor: pointer;"><img src="images/night-city.jpg" class="img-polaroid"><h4 style="font-weight: 800; text-align: center; color: rgb(250, 10, 50);">Отчет по практике</h4> <p style="font-weight: 600; text-align: center; color: #FF5F5F;">от 52 рублей</p> </li>
+							<li class="list_photos_li" style="height: 190px; cursor: pointer;"><img src="images/irish-hands.jpg" class="img-polaroid"><h4 style="font-weight: 800; text-align: center; color: rgb(250, 10, 50);">Контрольная</h4><p style="font-weight: 600; text-align: center; color: #FF5F5F;">от 18 рублей</p>  </li>                            
+                            <li class="list_photos_li" style="height: 190px; cursor: pointer;"><img src="images/Top_view.jpg" class="img-polaroid"><h4 style="font-weight: 800; text-align: center; color: rgb(250, 10, 50);">Речь и презинтация</h4> <p style="font-weight: 600; text-align: center; color: #FF5F5F;">от 12 рублей</p> </li>
+                            
+                        </ul>
+                    </div> 
+					
+                    <hr style="margin:35px 0 15px" />
+
+                    
+					<div class="row-fluid">
+							<div class="span6">
+								<div class="row-fluid wow fadeInUp" data-wow-offset="200">
+                        			<h1>Новости</h1> 
+                    			</div>
+                    			<br />
+		                        <div class="wow fadeInLeft" data-wow-offset="200">
+
+		                            <h3 style="font-weight: 800; text-align: left; color: rgb(250, 10, 50);">Обновленный сайт</h3>         
+
+		                            <p>
+		                                <img src="images/spring-is-coming.jpg" class="img-polaroid" style="margin:0px 0px; width: 100%">  
+		                            </p>
+									
+		                            <p>Мы ценим наших клиентов! И теперь для простоты заказа работ вы можете использовать любой свой гаджет. Так же, для улучшения работы с нами скачайте приложение iDiplom с AppStore или PlayMarket чтобы постоянно быть с нами на связи. 
+		                            </p>
+		                                                                                       
+		                        </div>
+		                        <div class="wow fadeInLeft" data-wow-offset="200" style="margin-top: 35px;">
+
+		                            <h3 style="font-weight: 800; text-align: left; color: rgb(250, 10, 50);">График работы на май</h3>         
+
+		                            <p>
+		                                <img src="images/spring-is-coming1.jpg" class="img-polaroid" style="margin:0px 0px; width: 100%">  
+		                            </p>
+									
+		                            <p>Дорогие друзья! Вот наш график работы на май, офис компании не будет работать с 7 по 10 мая включительно. Приносим наши извинения за неудобства! 
+		                            </p>
+		                                                                                       
+		                        </div>
+		                        <div class="wow fadeInLeft" data-wow-offset="200" style="margin-top: 35px;">
+
+		                            <h3 style="font-weight: 800; text-align: left; color:rgb(250, 10, 50);">График работы на март</h3>         
+
+		                            <p>
+		                                <img src="images/spring-is-coming2.jpg" class="img-polaroid" style="margin:0px 0px; width: 100%">  
+		                            </p>
+									
+		                            <p>Дорогие друзья, лавите график работы на март! Офис нашей компании не будет работать с 7 по 11 марта. Приносим свои извинения за неудобства. 
+		                            </p>
+		                                                                                       
+		                        </div>
+	                        
+	                    	</div>
+	                    	<hr>
+	                    	<div class="span6">
+	                    		<div class="row-fluid wow fadeInUp" data-wow-offset="200">
+                        			<h1 style="text-align: right;">Отзывы</h1> 
+                    			</div>
+								<div class="wow fadeInRight" data-wow-offset="200" style="margin-top: 35px;">
+
+		                            <h4 style="font-weight: 800; text-align: right; color: rgb(250, 10, 50);">22 Марта 19:24</h4>         
+
+		                            <p><img src="icons/women.png" class="img-polaroid span" style="margin:0px 10px; width: 15%; border-radius: 50%">
+		                            </p>
+									
+		                            <p><i>Спасибо, что откликнулись на мою просьбу, думала, что уже никто не возьмётся... Работу сдала, очень рада!) В следующий раз сразу к Вам обращусь. Ещё раз спасибо))) 
+		                            </i></p>
+		                            <h5 style="font-weight: 800; text-align: right; color: rgb(250, 10, 50); border-bottom: 1px solid #e2e2e2; padding-bottom: 20px">Татьяна</h5>
+		                                                                                       
+		                        </div>
+		                        <div class="wow fadeInRight" data-wow-offset="200" style="margin-top: 35px;">
+
+		                            <h4 style="font-weight: 800; text-align: right; color: rgb(250, 10, 50);">05 Марта 18:41</h4>         
+
+		                            <p><img src="icons/men.png" class="img-polaroid span" style="margin:0px 10px; width: 15%; border-radius: 50%">
+                                    </p>
+									
+		                            <p><i>
+		                            	Здраствуйте!<br>Немного поздновато но все же!<br>Работу сделали достаточно быстро и качественно<br>Были небольшие помарки но их устранили бесплатно и в тот же день!<br>Так что я доволен работай<br>И сдал самым первым и на отлично! 
+		                            </i></p>
+		                            <h5 style="font-weight: 800; text-align: right; color: rgb(250, 10, 50); border-bottom: 1px solid #e2e2e2; padding-bottom: 20px">Николаев А.С.</h5>
+		                                                                                       
+		                        </div>
+		                        <div class="wow fadeInRight" data-wow-offset="200" style="margin-top: 35px;">
+
+		                            <h4 style="font-weight: 800; text-align: right; color: rgb(250, 10, 50);">6 Февраля 14:37</h4>         
+
+		                            <p><img src="icons/women.png"class="img-polaroid span" style="margin:0px 10px; width: 15%; border-radius: 50%">
+		                            </p>
+									
+		                            <p><i>Добрый день. недавно заказывала у вас работу и очень довольно результатом. вы меня очень спасли) огромное спасибо, не знаю что бы я делала. удачи и успехов вам!!!)))
+		                            </i></p>
+		                            <h5 style="font-weight: 800; text-align: right; color: rgb(250, 10, 50); border-bottom: 1px solid #e2e2e2; padding-bottom: 20px">Диана Ди</h5>
+		                                                                                       
+		                        </div>
+		                        <div class="wow fadeInRight" data-wow-offset="200" style="margin-top: 35px;">
+
+		                            <h4 style="font-weight: 800; text-align: right; color: rgb(250, 10, 50);">17 Января 22:18</h4>         
+
+		                            <p><img src="icons/men.png" class="img-polaroid span" style="margin:0px 10px; width: 15%; border-radius: 50%">
+		                            </p>
+									
+		                            <p><i>Качество и скорость.Сначала заказывал работу в другой конторе, но качество оставляло желать лучшего, принес на переделку в "айдиплом", очень качественно и в небольшой промежуток времени сделали из плохой работы отличную. В итоге, получилась работа на отлично, чему я очень рад. Теперь буду обращаться в эту компанию постоянно и всем советую!!! В Минске лучше фирмы вы не найдете 
+		                            </i></p>
+		                            <h5 style="font-weight: 800; text-align: right; color: rgb(250, 10, 50); border-bottom: 1px solid #e2e2e2; padding-bottom: 20px">Пётр</h5>
+		                                                                                       
+		                        </div>
+		                        <div class="wow fadeInRight" data-wow-offset="200" style="float: right; margin-top: 20px;">
+		                        	<a class="btn btn-large btn-primary" href="#" style="font-size: 20px">
+		                        		Ещё отзывы
+		                        	</a>
+		                        </div>
+
+	                    	</div>
+					</div>
+
+                </div>
+
+            </div>
+
+        <div id="footerInnerSeparator"></div>
+    </div>
+
+</div>
+
+<div id="footerOuterSeparator"></div>
+
+<div id="divFooter" class="footerArea wow fadeIn" data-wow-offset="200">
+
+    <div class="container wow fadeIn" data-wow-delay="0.9s">
+
+        <div class="divPanel">
+
+            <div class="row-fluid">
+                <div class="span3" id="footerArea1">
+                
+                    <h3>О компании</h3>
+
+                    <p>
+                    	Мы тоже работали, чтобы на стипендию шикануть, тоже пытались успеть выполнить все очень важные студенческие дела и не забыть при этом про сессию. И, несмотря на студенческое состояние, постоянного недосыпа, вспоминать об этом приятно. А теперь, для того, чтобы вы выспались — есть мы. Те, кто знает, как обеспечить Вам спокойный сон.
+                	</p>
+                </div>
+                <div class="span3" id="footerArea2">
+
+                    <h3>Сроки выполнения</h3> 
+                       	<p>
+                       		Существуют стандартные сроки выполнения заказов в нашей компании. Для дипломной (магистерской) работы (проекта) – это 2-6 недель, для остальных работ — 5-14 дней. 
+                       	</p>
+
+                </div>
+                <div class="span3" id="footerArea3">
+
+                    <h3>Договор</h3> 
+                    <p>
+                    	Как правило, договор заключается при написании дипломной (магистерской) работы. Заключение договора носит добровольный характер. Его можно заключить на любом этапе начиная с момента согласования плана работы.
+                    </p>
+                    <span>
+                    	С договором можно ознакомиться или у нас в офисе или получив по электронной почте.
+                    </span>
+
+                </div>
+                <div class="span3" id="footerArea4">
+
+                    <h3>Связь с нами</h3>  
+                                                               
+                    <ul id="contact-info">
+                    <li>                                    
+                        <i class="general foundicon-phone icon"></i>
+                        <span class="field">Тел.:</span>
+                        <br />
+                        <p>+375 44-513-61-41</p>
+                        <br>
+                        <p style="margin-left: 30px; margin-top: -28px">+375 29-546-29-72</p>                
+                    </li>
+                    <li>
+                        <i class="general foundicon-mail icon"></i>
+                        <span class="field">Email:</span>
+                        <br />
+                        <a href="mailto:info@yourdomain.com" title="Email">info@yourdomain.com</a>
+
+                    </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <br /><br />
+            <div class="row-fluid">
+                <div class="span12">
+                    <p class="copyright">
+                        Copyright © 2018 Mike Zhukovskiy. All Rights Reserved. 
+                    </p>
+
+                    <p class="social_bookmarks">
+                        <a href="#"><i class="social foundicon-facebook"></i> Facebook</a>
+			<a href=""><i class="social foundicon-twitter"></i> Twitter</a>
+			<a href="#"><i class="social foundicon-pinterest"></i> Pinterest</a>
+			<a href="#"><i class="social foundicon-instagram"></i> Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <br />
+
+        </div>
+
+    </div>
+    
+</div>
+
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/wow.min.js"></script>
+<script src="scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="scripts/default.js" type="text/javascript"></script>
+<script src="scripts/carousel/jquery.carouFredSel-6.2.0-packed.js" type="text/javascript"></script>
+<script src="scripts/main.js" type="text/javascript"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
